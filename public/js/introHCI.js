@@ -10,4 +10,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$("#likeClick").click(likeClick);
+}
+
+function likeClick(e)
+{
+	e.preventDefault();
+	// console.log("CLICKED");	
+	ga('send', 'event', 'like', 'click');
+
 }
